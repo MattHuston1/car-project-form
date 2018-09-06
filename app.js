@@ -1,4 +1,5 @@
 var serverApi = 'https://car-project1.herokuapp.com/people'
+// var serverApi = 'http://localhost:3000/people'
 form.addEventListener('submit', submitForm)
 
 function submitForm(event) {
