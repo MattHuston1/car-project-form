@@ -1,5 +1,5 @@
+var form = document.getElementById('form')
 var serverApi = 'https://car-project1.herokuapp.com/people'
-// var serverApi = 'http://localhost:3000/people'
 form.addEventListener('submit', submitForm)
 
 function submitForm(event) {
@@ -23,5 +23,8 @@ function submitForm(event) {
     body: JSON.stringify(dataPush)
   })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => 
+      console.log(data),
+      form.reset()
+    )
 }
